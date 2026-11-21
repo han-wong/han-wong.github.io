@@ -193,8 +193,9 @@ a:hover { text-decoration-thickness: 2px; }
 .tech li { border: 1px solid var(--rule); background: var(--white); border-radius: 4px; padding: 0.2rem 0.65rem; }
 
 .contact-lines { list-style: none; padding: 0; margin: 0 0 2rem; }
-.contact-lines li { margin-bottom: 0.4rem; }
-.contact-lines .k { color: var(--steel); display: inline-block; min-width: 6rem; }
+.contact-lines li { margin-bottom: 0.4rem; display: flex; align-items: center; flex-wrap: wrap; }
+.contact-lines .k { color: var(--steel); display: inline-flex; align-items: center; gap: 0.5rem; min-width: 7rem; }
+.icon { width: 1.15em; height: 1.15em; flex: none; fill: none; stroke: var(--ink); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 
 /* Footer */
 .site-footer { border-top: 1px solid var(--rule); color: var(--steel); font-size: 0.9rem; }
