@@ -4,106 +4,120 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Han Wong · Python, Angular &amp; automation developer</title>
-    <meta name="description" content="Freelance systems developer in Sweden. I automate manual processes and build Python tools, integrations and Angular frontends.">
+    <title>Han Wong, freelance developer: automation, Python and Angular</title>
+    <meta name="description" content="Freelance systems developer in Sweden. I turn manual work into scripts, Python tools and Angular apps that run themselves.">
     <link rel="alternate" hreflang="sv" href="https://han-wong.github.io/sv/">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=JetBrains+Mono&display=swap">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar is-spaced" aria-label="main navigation">
-        <div class="container">
-            <div class="navbar-brand">
-                <a class="navbar-item has-text-weight-bold" href="index.html">Han Wong</a>
-            </div>
-            <div class="navbar-end is-flex">
-                <a class="navbar-item" href="#services">Services</a>
-                <a class="navbar-item" href="#contact">Contact</a>
-                <a class="navbar-item" href="playground.html">Playground</a>
-                <a class="navbar-item" href="sv/index.html" lang="sv">Svenska</a>
-            </div>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="site-name" href="index.html">Han Wong</a>
+            <nav class="site-nav" aria-label="Main">
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <a href="playground.html">Playground</a>
+                <a href="sv/index.html" lang="sv" hreflang="sv">Svenska</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <section class="hero is-light">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title is-2">I turn slow, manual work into tools that run themselves.</h1>
-                <p class="subtitle">
-                    Systems developer based in Sweden, working with Python, Angular and automation.
-                    Available for freelance projects, remote or on site.
-                </p>
-                <a class="button is-primary is-medium" href="#contact">Get in touch</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="services">
-        <div class="container">
-            <h2 class="title is-3">Services</h2>
-            <div class="columns is-multiline">
-                <div class="column is-half">
-                    <div class="box">
-                        <h3 class="title is-5">Process automation</h3>
-                        <p>Repetitive manual work, such as reports, file handling, moving data between systems or deployment steps, replaced with scripts and CLI tools that run on their own.</p>
+    <main>
+        <section class="hero">
+            <div class="wrap">
+                <div class="demo" role="img" aria-label="Example: four manual weekly steps replaced by one script that finishes in 40 seconds">
+                    <div class="manual" aria-hidden="true">
+                        <p class="when">Every Monday, by hand</p>
+                        <ol class="steps">
+                            <li>Export data from system A</li>
+                            <li>Paste it into a spreadsheet</li>
+                            <li>Fix the formatting</li>
+                            <li>Email it to the team</li>
+                        </ol>
+                    </div>
+                    <div class="connector" aria-hidden="true"></div>
+                    <div class="auto" aria-hidden="true">
+                        <p class="cmd"><span class="prompt">$ </span>./weekly-report.sh</p>
+                        <p class="result">Report sent. <mark>Done in 40 seconds.</mark></p>
                     </div>
                 </div>
-                <div class="column is-half">
-                    <div class="box">
-                        <h3 class="title is-5">Python tools &amp; integrations</h3>
-                        <p>Internal tools, API integrations and data cleanup scripts that get your systems talking to each other.</p>
-                    </div>
-                </div>
-                <div class="column is-half">
-                    <div class="box">
-                        <h3 class="title is-5">Angular frontend development</h3>
-                        <p>Dashboards and admin interfaces built or extended, plus fixes and version upgrades for existing Angular apps.</p>
-                    </div>
-                </div>
-                <div class="column is-half">
-                    <div class="box">
-                        <h3 class="title is-5">Internal tools, end to end</h3>
-                        <p>A small custom app with a Python backend and an Angular frontend to replace a spreadsheet or a manual workflow.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="section has-background-white-ter">
-        <div class="container">
-            <h2 class="title is-3">Recent work</h2>
-            <div class="content">
-                <p><strong>Automating a time-consuming manual process.</strong>
-                    Replaced a recurring manual workflow with shell scripts, CLI tooling and frontend scripts,
-                    freeing up hours of work that used to be done by hand.</p>
+                <h1>I turn manual work like this into tools that run themselves.</h1>
+                <p class="lede">I'm a systems developer in Sweden, available for freelance work. I build scripts, Python tools and Angular apps for teams that spend too much time on repetitive tasks.</p>
+                <a class="button" href="#contact">Email me about your task</a>
             </div>
-            <p class="has-text-weight-semibold">Tech I work with</p>
-            <div class="tags are-medium">
-                <span class="tag">Python</span>
-                <span class="tag">Angular</span>
-                <span class="tag">TypeScript</span>
-                <span class="tag">Shell / Bash</span>
-                <span class="tag">CLI tooling</span>
-                <span class="tag">Automation</span>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section" id="contact">
-        <div class="container">
-            <h2 class="title is-3">Contact</h2>
-            <p class="mb-4">Tell me about the task you'd like automated or built, and I'll get back to you. I work in English and Swedish.</p>
-            <div class="buttons">
-                <a class="button is-primary" href="mailto:YOUR_EMAIL">Email me</a>
-                <a class="button is-link is-outlined" href="YOUR_LINKEDIN_URL">LinkedIn</a>
+        <section class="block" id="services">
+            <div class="wrap">
+                <h2>What I can take off your hands</h2>
+                <table class="swap">
+                    <thead>
+                        <tr>
+                            <th scope="col">You do this by hand</th>
+                            <th scope="col">I build you</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Run the same steps every week: reports, file handling, deployments</td>
+                            <td><strong>Process automation</strong><span>Shell scripts and CLI tools that do it on their own</span></td>
+                        </tr>
+                        <tr>
+                            <td>Copy data between systems that don't talk to each other</td>
+                            <td><strong>Python integrations</strong><span>API connections, data cleanup and internal tools</span></td>
+                        </tr>
+                        <tr>
+                            <td>Struggle with an outdated or half-finished Angular app</td>
+                            <td><strong>Angular development</strong><span>Upgrades, fixes, new dashboards and admin screens</span></td>
+                        </tr>
+                        <tr>
+                            <td>Keep a spreadsheet that has quietly become an app</td>
+                            <td><strong>A small internal tool</strong><span>Python backend and Angular frontend, built to fit your workflow</span></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>© Han Wong · <a href="playground.html">Playground</a> · <a href="sv/index.html" lang="sv">Svenska</a></p>
+        <section class="block">
+            <div class="wrap">
+                <h2>Recent work</h2>
+                <p>Replaced a recurring manual workflow with shell scripts, CLI tooling and frontend scripts, freeing up hours of work that used to be done by hand.</p>
+                <ul class="tech" aria-label="Tools I work with">
+                    <li>Python</li>
+                    <li>Angular</li>
+                    <li>TypeScript</li>
+                    <li>Bash</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="block" id="contact">
+            <div class="wrap">
+                <h2>Tell me what you'd like automated</h2>
+                <p>Describe the task in a few sentences: what you do, how often, and which systems are involved. I'll reply with whether I can help and roughly what it would take. I work remotely or on site, in English or Swedish.</p>
+                <ul class="contact-lines">
+                    <li><span class="k">Email</span> <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></li>
+                    <li><span class="k">LinkedIn</span> <a href="YOUR_LINKEDIN_URL">YOUR_LINKEDIN_URL</a></li>
+                </ul>
+                <a class="button" href="mailto:YOUR_EMAIL">Email me about your task</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>© 2026 Han Wong</p>
+            <nav aria-label="Footer">
+                <a href="playground.html">Playground</a>
+                <a href="sv/index.html" lang="sv" hreflang="sv">Svenska</a>
+            </nav>
         </div>
     </footer>
 </body>

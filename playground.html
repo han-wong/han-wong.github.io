@@ -4,27 +4,29 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Playground · Han Wong</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Playground: Han Wong</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=JetBrains+Mono&display=swap">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar is-spaced" aria-label="main navigation">
-        <div class="container">
-            <div class="navbar-brand">
-                <a class="navbar-item has-text-weight-bold" href="index.html">Han Wong</a>
-            </div>
-            <div class="navbar-end is-flex">
-                <a class="navbar-item" href="index.html">Home</a>
-                <a class="navbar-item" href="sv/index.html" lang="sv">Svenska</a>
-            </div>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="site-name" href="index.html">Han Wong</a>
+            <nav class="site-nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="playground.html" aria-current="page">Playground</a>
+                <a href="sv/index.html" lang="sv" hreflang="sv">Svenska</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <section class="section">
-        <div class="container content">
+    <main class="block plain">
+        <div class="wrap">
             <h1>Playground</h1>
-            <p class="subtitle">Side projects and exercises I've built for fun and learning.</p>
+            <p class="note">Side projects and exercises I've built for fun and to learn new things.</p>
 
             <h2>Projects</h2>
             <ul>
@@ -32,14 +34,24 @@
                 <li><a href="https://buttered-oil-vacation.glitch.me">Message Board</a></li>
             </ul>
 
-            <h2><a href="https://www.freecodecamp.org">freeCodeCamp</a> exercises</h2>
+            <h2>freeCodeCamp exercises</h2>
             <ul>
                 <li><a href="https://typical-abundant-pluto.glitch.me/">Cat Photo App</a></li>
                 <li><a href="https://sunrise-giant-wall.glitch.me/">Cafe Menu</a></li>
                 <li><a href="https://gainful-perfect-farmhouse.glitch.me/">CSS Color Markers</a></li>
             </ul>
         </div>
-    </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>© 2026 Han Wong</p>
+            <nav aria-label="Footer">
+                <a href="index.html">Home</a>
+                <a href="sv/index.html" lang="sv" hreflang="sv">Svenska</a>
+            </nav>
+        </div>
+    </footer>
 </body>
 
 </html>

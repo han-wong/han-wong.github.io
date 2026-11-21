@@ -4,106 +4,120 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Han Wong · Python-, Angular- och automationsutvecklare</title>
-    <meta name="description" content="Frilansande systemutvecklare i Sverige. Jag automatiserar manuella processer och bygger verktyg, integrationer i Python och gränssnitt i Angular.">
+    <title>Han Wong, frilansande utvecklare: automation, Python och Angular</title>
+    <meta name="description" content="Frilansande systemutvecklare i Sverige. Jag gör manuellt arbete till skript, Python-verktyg och Angular-appar som sköter sig själva.">
     <link rel="alternate" hreflang="en" href="https://han-wong.github.io/">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=JetBrains+Mono&display=swap">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-    <nav class="navbar is-spaced" aria-label="huvudmeny">
-        <div class="container">
-            <div class="navbar-brand">
-                <a class="navbar-item has-text-weight-bold" href="index.html">Han Wong</a>
-            </div>
-            <div class="navbar-end is-flex">
-                <a class="navbar-item" href="#tjanster">Tjänster</a>
-                <a class="navbar-item" href="#kontakt">Kontakt</a>
-                <a class="navbar-item" href="../playground.html">Playground</a>
-                <a class="navbar-item" href="../index.html" lang="en">English</a>
-            </div>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="site-name" href="index.html">Han Wong</a>
+            <nav class="site-nav" aria-label="Huvudmeny">
+                <a href="#tjanster">Tjänster</a>
+                <a href="#kontakt">Kontakt</a>
+                <a href="../playground.html">Playground</a>
+                <a href="../index.html" lang="en" hreflang="en">English</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <section class="hero is-light">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title is-2">Jag gör tidskrävande manuellt arbete till verktyg som sköter sig själva.</h1>
-                <p class="subtitle">
-                    Systemutvecklare i Sverige som arbetar med Python, Angular och automation.
-                    Tillgänglig för frilansuppdrag, på distans eller på plats.
-                </p>
-                <a class="button is-primary is-medium" href="#kontakt">Kontakta mig</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="tjanster">
-        <div class="container">
-            <h2 class="title is-3">Tjänster</h2>
-            <div class="columns is-multiline">
-                <div class="column is-half">
-                    <div class="box">
-                        <h3 class="title is-5">Processautomation</h3>
-                        <p>Repetitivt manuellt arbete, som rapporter, filhantering, dataflyttar mellan system eller driftsättningssteg, ersätts med skript och CLI-verktyg som kör av sig själva.</p>
+    <main>
+        <section class="hero">
+            <div class="wrap">
+                <div class="demo" role="img" aria-label="Exempel: fyra manuella steg varje vecka ersätts av ett skript som är klart på 40 sekunder">
+                    <div class="manual" aria-hidden="true">
+                        <p class="when">Varje måndag, för hand</p>
+                        <ol class="steps">
+                            <li>Exportera data från system A</li>
+                            <li>Klistra in i ett kalkylark</li>
+                            <li>Rätta formateringen</li>
+                            <li>Mejla det till teamet</li>
+                        </ol>
+                    </div>
+                    <div class="connector" aria-hidden="true"></div>
+                    <div class="auto" aria-hidden="true">
+                        <p class="cmd"><span class="prompt">$ </span>./veckorapport.sh</p>
+                        <p class="result">Rapporten skickad. <mark>Klart på 40 sekunder.</mark></p>
                     </div>
                 </div>
-                <div class="column is-half">
-                    <div class="box">
-                        <h3 class="title is-5">Verktyg och integrationer i Python</h3>
-                        <p>Interna verktyg, API-integrationer och skript för datastädning som får era system att prata med varandra.</p>
-                    </div>
-                </div>
-                <div class="column is-half">
-                    <div class="box">
-                        <h3 class="title is-5">Frontendutveckling i Angular</h3>
-                        <p>Dashboards och administrationsgränssnitt byggs nya eller byggs ut, och befintliga Angular-appar får felrättningar och versionsuppgraderingar.</p>
-                    </div>
-                </div>
-                <div class="column is-half">
-                    <div class="box">
-                        <h3 class="title is-5">Interna verktyg från början till slut</h3>
-                        <p>En liten skräddarsydd app med backend i Python och frontend i Angular som ersätter ett kalkylark eller ett manuellt arbetsflöde.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="section has-background-white-ter">
-        <div class="container">
-            <h2 class="title is-3">Tidigare arbete</h2>
-            <div class="content">
-                <p><strong>Automatisering av en tidskrävande manuell process.</strong>
-                    Ersatte ett återkommande manuellt arbetsflöde med skalskript, CLI-verktyg och frontendskript,
-                    vilket frigjorde timmar av arbete som tidigare gjordes för hand.</p>
+                <h1>Jag gör manuellt arbete som detta till verktyg som sköter sig själva.</h1>
+                <p class="lede">Jag är systemutvecklare i Sverige och tar frilansuppdrag. Jag bygger skript, Python-verktyg och Angular-appar åt team som lägger för mycket tid på repetitiva uppgifter.</p>
+                <a class="button" href="#kontakt">Mejla mig om din uppgift</a>
             </div>
-            <p class="has-text-weight-semibold">Teknik jag arbetar med</p>
-            <div class="tags are-medium">
-                <span class="tag">Python</span>
-                <span class="tag">Angular</span>
-                <span class="tag">TypeScript</span>
-                <span class="tag">Shell / Bash</span>
-                <span class="tag">CLI-verktyg</span>
-                <span class="tag">Automation</span>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section" id="kontakt">
-        <div class="container">
-            <h2 class="title is-3">Kontakt</h2>
-            <p class="mb-4">Berätta vad du vill få automatiserat eller byggt, så återkommer jag. Jag arbetar på svenska och engelska.</p>
-            <div class="buttons">
-                <a class="button is-primary" href="mailto:YOUR_EMAIL">Mejla mig</a>
-                <a class="button is-link is-outlined" href="YOUR_LINKEDIN_URL">LinkedIn</a>
+        <section class="block" id="tjanster">
+            <div class="wrap">
+                <h2>Det här kan jag ta över</h2>
+                <table class="swap">
+                    <thead>
+                        <tr>
+                            <th scope="col">Ni gör detta för hand</th>
+                            <th scope="col">Jag bygger</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Samma steg varje vecka: rapporter, filhantering, driftsättningar</td>
+                            <td><strong>Processautomation</strong><span>Skalskript och CLI-verktyg som gör jobbet själva</span></td>
+                        </tr>
+                        <tr>
+                            <td>Kopierar data mellan system som inte pratar med varandra</td>
+                            <td><strong>Integrationer i Python</strong><span>API-kopplingar, datastädning och interna verktyg</span></td>
+                        </tr>
+                        <tr>
+                            <td>Kämpar med en föråldrad eller halvfärdig Angular-app</td>
+                            <td><strong>Angular-utveckling</strong><span>Uppgraderingar, felrättningar, nya dashboards och adminvyer</span></td>
+                        </tr>
+                        <tr>
+                            <td>Har ett kalkylark som i tysthet blivit en app</td>
+                            <td><strong>Ett litet internt verktyg</strong><span>Backend i Python och frontend i Angular, anpassat efter ert arbetssätt</span></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>© Han Wong · <a href="../playground.html">Playground</a> · <a href="../index.html" lang="en">English</a></p>
+        <section class="block">
+            <div class="wrap">
+                <h2>Tidigare arbete</h2>
+                <p>Ersatte ett återkommande manuellt arbetsflöde med skalskript, CLI-verktyg och frontendskript, vilket frigjorde timmar av arbete som tidigare gjordes för hand.</p>
+                <ul class="tech" aria-label="Verktyg jag arbetar med">
+                    <li>Python</li>
+                    <li>Angular</li>
+                    <li>TypeScript</li>
+                    <li>Bash</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="block" id="kontakt">
+            <div class="wrap">
+                <h2>Berätta vad du vill få automatiserat</h2>
+                <p>Beskriv uppgiften med några meningar: vad ni gör, hur ofta och vilka system som berörs. Jag svarar om jag kan hjälpa till och ungefär vad det skulle innebära. Jag arbetar på distans eller på plats, på svenska eller engelska.</p>
+                <ul class="contact-lines">
+                    <li><span class="k">E-post</span> <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></li>
+                    <li><span class="k">LinkedIn</span> <a href="YOUR_LINKEDIN_URL">YOUR_LINKEDIN_URL</a></li>
+                </ul>
+                <a class="button" href="mailto:YOUR_EMAIL">Mejla mig om din uppgift</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>© 2026 Han Wong</p>
+            <nav aria-label="Sidfot">
+                <a href="../playground.html">Playground</a>
+                <a href="../index.html" lang="en" hreflang="en">English</a>
+            </nav>
         </div>
     </footer>
 </body>
